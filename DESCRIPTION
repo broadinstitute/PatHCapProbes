@@ -1,0 +1,16 @@
+Package: PatHCapProbes
+Title: Generate probes for PatH-Cap
+Version: 1.0
+Authors@R: 
+    person(given = "Nirmalya",
+           family = "Bandyopadhyay",
+           role = c("aut", "cre"),
+           email = "nirmalya@broadinstitute.org",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Generate probes for PatH-Cap.
+Imports: rtracklayer,
+            Biostrings
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
