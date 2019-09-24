@@ -8,7 +8,7 @@ Authors@R:
            email = "nirmalya@broadinstitute.org",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Generate probes for PatH-Cap.
-Depends: R (>= 3.6.1)
+Depends: R (>= 3.5.0)
 Imports: rtracklayer,
             Biostrings
 License: What license it uses
