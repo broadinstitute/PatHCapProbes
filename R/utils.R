@@ -37,7 +37,7 @@ get_probe_pos <- function(lindex, ltab, max_len) {
     return (local_lst)
 }
 
-get_probe_sequences <- function(cds_name, probe_str_set, lfasta_obj1) {
+get_probe_sequences <- function(cds_name, probe_str_set, lfasta_obj1, probes_file, add_adapt, pre_str, suf_str) {
 
     # get strand
     parts <- strsplit(cds_name, "_")
@@ -68,9 +68,9 @@ get_probe_sequences <- function(cds_name, probe_str_set, lfasta_obj1) {
         # Check if the strand is + or -
         lseq_s <- NA
         if (lstrand == '+') {
-            lseq_s <- lseq
-        } else {
             lseq_s <- reverseComplement(lseq)
+        } else {
+            lseq_s <- lseq
         }
 
         sense_id <- paste0(">", prob_head1, "")

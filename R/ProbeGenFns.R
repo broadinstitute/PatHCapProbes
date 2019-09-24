@@ -14,7 +14,7 @@
 probeGen <- function(fasta_file, gff_file, probes_file, add_adapt = FALSE, pre_str = "", suf_str = "") {
 
     # Read the fasta file
-    fasta_obj <- import(fasta_file, format = "fasta")
+    fasta_obj <- rtracklayer::import(fasta_file, format = "fasta")
 
     # read the gff file
     gff_tab1 <- readGFF(gff_file, tags=c("ID", "Parent", "Name", "locus_tag", "old_locus_tag"))
@@ -31,6 +31,6 @@ probeGen <- function(fasta_file, gff_file, probes_file, add_adapt = FALSE, pre_s
     for (cds_name in names(probe_lst)) {
         #print(cds_name)
         probe_str_set <- probe_lst[[cds_name]]
-        get_probe_sequences(cds_name, probe_str_set, fasta_obj[[1]])
+        get_probe_sequences(cds_name, probe_str_set, fasta_obj[[1]], probes_file, add_adapt, pre_str, suf_str)
     }
 } 
