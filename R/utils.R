@@ -68,9 +68,9 @@ get_probe_sequences <- function(cds_name, probe_str_set, lfasta_obj1, probes_fil
         # Check if the strand is + or -
         lseq_s <- NA
         if (lstrand == '+') {
-            lseq_s <- reverseComplement(lseq)
-        } else {
             lseq_s <- lseq
+        } else {
+            lseq_s <- reverseComplement(lseq)
         }
 
         sense_id <- paste0(">", prob_head1, "")
