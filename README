@@ -4,9 +4,7 @@ The main function can be called such as:
 
 probeGen(fasta_file, gff_file, probes_file, add_apt = FALSE, pre_str = "", suf_str = "") 
 
-where
-
-fasta_file contains the bacterial genome sequence.
+where fasta_file contains the bacterial genome sequence.
 gff_file contains the bacterial genome/transcriptome annotation in gff format.
 probes_file is the path to the output file that contains the sequence of generated probes.
 
