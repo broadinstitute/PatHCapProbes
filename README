@@ -1,0 +1,15 @@
+This package contains the R function for creating hybrid capture probes.
+
+The main function can be called such as:
+
+probeGen(fasta_file, gff_file, probes_file, add_apt = FALSE, pre_str = "", suf_str = "") 
+
+where
+
+fasta_file contains the bacterial genome sequence.
+gff_file contains the bacterial genome/transcriptome annotation in gff format.
+probes_file is the path to the output file that contains the sequence of generated probes.
+
+There are three optional parameters to this function,
+add_apt is used to indicate if adapter would be added to the pre and post of the generated probes.
+pre_str and suf_str are sequence of prefix and suffix adapters. 
