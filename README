@@ -11,3 +11,8 @@ probes_file is the path to the output file that contains the sequence of generat
 There are three optional parameters to this function,
 add_apt is used to indicate if adapter would be added to the pre and post of the generated probes.
 pre_str and suf_str are sequence of prefix and suffix adapters. 
+
+
+Note:  
+
+After the probe generation using probeGen function the user needs to blast all the probes to some to a standard transcriptomic database including ribosomal RNA (rRNA) of that pathogen and the transcriptome (mRNA/rRNA) of host species. Otherwise, there might be some sequence similarity between one or more probes to pathogen rRNA and host mRNA/rRNA. A faulty probe with sequence similarity to that of pathogen rRNA or host transcriptome would reduce the efficiency of hybrid capture procedure. Please note that blasting is not part of that scripts in this github repository and the user of this script should subsequently do it and remove the unwanted probes.
