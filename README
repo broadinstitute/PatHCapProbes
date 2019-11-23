@@ -1,4 +1,4 @@
-This package contains the R function for creating hybrid capture probes.
+This package contains the R function for creating probes using PatH-Cap method.
 
 The main function can be called such as:
 
